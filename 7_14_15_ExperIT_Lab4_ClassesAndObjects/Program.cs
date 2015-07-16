@@ -69,7 +69,7 @@ namespace LabFiveClaases
             //student = Int32.Parse(Console.ReadLine()) - 1;
             //CHANGED to CHECK for INT
 
-            while (!Int32.TryParse(Console.ReadLine(), out student) || student <= 0)
+            while (!Int32.TryParse(Console.ReadLine(), out student) || student <= 0 || student>team.Count)
             {
 
                 Console.Write("Invalid input, please enter a positive integer for student number: ");
